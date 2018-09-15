@@ -33,7 +33,7 @@ class SiteConfigExtension extends DataExtension
                 ->setDescription(
                     _t(
                         "TWOFACTOR.ENABLETWOFACTORDESCRIPTION",
-                        "Allow users to turn two factor authenication on or off"
+                        "Allow users to turn two factor authentication on or off"
                     )
                 ),
                 FieldGroup::create(
@@ -48,7 +48,7 @@ class SiteConfigExtension extends DataExtension
                 ->setDescription(
                     _t(
                         "TWOFACTOR.REQUIRETWOFACTORDESCRIPTION",
-                        "Require users to use two factor authenication"
+                        "Require users to use two factor authentication"
                     )
                 ),
             )
