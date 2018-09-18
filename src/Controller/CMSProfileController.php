@@ -38,6 +38,9 @@ class CMSProfileController extends SS_CMSProfileController
     public function getEditForm($id = null, $fields = null)
     {
         $form = parent::getEditForm($id, $fields);
+        if (!Config::inst()->get(Authenticator::class, 'enable_2fa')) {
+            return $form;
+        }
         $member = Member::currentUser();
         if (!$member) {
             return $form;
